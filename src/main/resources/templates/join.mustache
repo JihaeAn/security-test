@@ -9,11 +9,10 @@
 <body>
 login page
 <br>
-<form action="/loginProc" method="post" name="loginForm">
+<form action="/joinProc" method="post" name="joinForm">
     <input type="text" id="username" name="username" placeholder="id"/>
     <input type="password" id="password" name="password" placeholder="password"/>
-    <input type="hidden" name="_csrf" value="{{_csrf.token}}">
-    <input type="submit" value="login"/>
+    <input type="submit" value="Join"/>
 </form>
 
 </body>
