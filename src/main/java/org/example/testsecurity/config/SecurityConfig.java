@@ -1,5 +1,7 @@
 package org.example.testsecurity.config;
 
+import org.example.testsecurity.filter.JwtAuthFilter;
+import org.example.testsecurity.provider.JwtTokenProvider;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -9,8 +11,6 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import kr.co.foryousoft.new4ubackend.config.security.filter.JwtAuthFilter;
-import kr.co.foryousoft.new4ubackend.config.security.provider.JwtTokenProvider;
 import lombok.RequiredArgsConstructor;
 
 @Configuration
